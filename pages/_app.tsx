@@ -1,6 +1,10 @@
-import "@/styles/globals.css";
+import { TestProvider } from "contexts/test";
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <TestProvider>
+      <Component {...pageProps} />
+    </TestProvider>
+  );
 }
