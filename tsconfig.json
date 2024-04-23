@@ -4,8 +4,8 @@
     "baseUrl": ".", // base import directory
     "esModuleInterop": true, // TypeScript treats CommonJS/AMD/UMD modules similar to ES6 modules. Can do import * as module from 'amdModule' instead require('amdModule')
     "forceConsistentCasingInFileNames": true, // shows ts error upon using filename error. default: true
-    "incremental": true,
-    "isolatedModules": true,
+    "incremental": true, // cache compliation.
+    "isolatedModules": true, // 
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext", "webworker"],
     "module": "esnext",
