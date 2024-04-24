@@ -2,22 +2,22 @@
   "compilerOptions": {
     "allowJs": true, // allow import js file from .ts & .tsx
     "baseUrl": ".", // base import directory
-    "esModuleInterop": true, // TypeScript treats CommonJS/AMD/UMD modules similar to ES6 modules. Can do import * as module from 'amdModule' instead require('amdModule')
+    "esModuleInterop": true, //Enables interoperability between CommonJS/AMD/UMD modules and ES6 modules.  Can do import * as module from 'amdModule' instead require('amdModule')
     "forceConsistentCasingInFileNames": true, // shows ts error upon using filename error. default: true
     "incremental": true, // cache compliation.
-    "isolatedModules": true, // 
-    "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext", "webworker"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "noImplicitReturns": true,
-    "plugins": [{ "name": "next" }],
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext",
-    "types": ["jest", "offscreencanvas", "wicg-file-system-access"]
+    "isolatedModules": true, //Disallows importing modules that are not side-effect free. Helps in catching common errors.
+    "jsx": "preserve", // keep jsx with unchanged //
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"], // Specifies the libraries available in the runtime environment.
+    "module": "esnext", // module system.
+    "moduleResolution": "node", //  resolution strategy to resolve module
+    "noEmit": true, // Prevents TypeScript from emitting compiled output (JavaScript files). Useful when using other tools like Babel or SWC for the compilation.
+    "noImplicitReturns": true, // Ensures all code paths in a function return a value. If not, TypeScript will raise an error.
+    "plugins": [{ "name": "next" }], // Specifies a language service plugin named "next" which helps with TypeScript language features in the editor.
+    "resolveJsonModule": true, // Allows importing JSON modules directly.
+    "skipLibCheck": true, // Skips type checking of declaration files (.d.ts), which can speed up the compilation process.
+    "strict": true, // Enables all strict type-checking options. It's a good practice to have this enabled for better type safety.
+    "target": "esnext", // Sets the ECMAScript target version for the compiled output.
+    "types": ["jest", "offscreencanvas", "wicg-file-system-access"] //  Specifies the type declaration files to include. These help in type checking and autocompletion.
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
