@@ -1,24 +1,24 @@
 import { useState } from "react";
-import { TestCommand, TestContextState } from "./types";
+import { type TestCommand, type TestContextState } from "contexts/test/types";
 
 const useTestContexts = (): TestContextState => {
   const [testValue, setTestValue] = useState<number>(0);
 
-  const modifyTestValue = (command: TestCommand) => {
+  const modifyTestValue = (command: TestCommand): void => {
     switch (command) {
-      default:
-        setTestValue(0);
-        break;
       case "+":
         setTestValue((prev) => prev + 1);
         break;
       case "-":
         setTestValue((prev) => prev - 1);
         break;
+      default:
+        setTestValue(0);
+        break;
     }
   };
 
-  return { testValue, modifyTestValue };
+  return { modifyTestValue, testValue };
 };
 
 export default useTestContexts;

@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import { TestProps } from ".";
+import useTestContexts from "contexts/test/useTestContext";
 
-const TestContent: FC<TestProps> = ({ testValue }) => {
-  return (
-    <>
-      <div>{testValue} from TestContent!</div>
-    </>
-  );
+const TestContent: FC = () => {
+  const { testValue } = useTestContexts();
+  return <div>{testValue} from TestContent!</div>;
 };
 
 export default TestContent;
