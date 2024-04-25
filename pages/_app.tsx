@@ -1,10 +1,9 @@
+import { type AppProps } from "next/app";
 import { TestProvider } from "contexts/test";
-import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <TestProvider>
-      <Component {...pageProps} />
-    </TestProvider>
-  );
-}
+const App = ({ Component, pageProps }: AppProps): React.ReactElement => (
+  <TestProvider>
+    <Component {...pageProps} />
+  </TestProvider>
+);
+export default App;

@@ -1,14 +1,20 @@
-import { TestContextState } from "contexts/test/types";
-import React from "react";
+import useTestContexts from "contexts/test/useTestContext";
 
-const TestTitle: FC<TestContextState> = ({ testValue, modifyTestValue }) => {
+const TestTitle: FC = () => {
+  const { testValue, modifyTestValue } = useTestContexts();
   return (
     <>
       <div>TestTitle</div>
       <span>{testValue}</span>
-      <button onClick={() => modifyTestValue("+")}>+</button>
-      <button onClick={() => modifyTestValue("-")}>-</button>
-      <button onClick={() => modifyTestValue("reset")}>reset</button>
+      <button onClick={() => modifyTestValue("+")} type="button">
+        +
+      </button>
+      <button onClick={() => modifyTestValue("-")} type="button">
+        -
+      </button>
+      <button onClick={() => modifyTestValue("reset")} type="button">
+        reset
+      </button>
     </>
   );
 };

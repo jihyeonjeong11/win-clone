@@ -1,6 +1,6 @@
-export type TestContextState = {
-  testValue: number;
-  modifyTestValue: (command: TestCommand) => void;
-};
-
 export type TestCommand = "+" | "-" | "reset";
+
+export type TestContextState = {
+  modifyTestValue: (command: TestCommand) => void;
+  testValue: number;
+};

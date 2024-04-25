@@ -1,12 +1,8 @@
-import React from "react";
-import { TestProps } from ".";
+import useTestContexts from "contexts/test/useTestContext";
 
-const TestFooter: FC<TestProps> = ({ testValue }) => {
-  return (
-    <>
-      <div>{testValue} from TestFooter!</div>
-    </>
-  );
+const TestFooter: FC = () => {
+  const { testValue } = useTestContexts();
+  return <div>{testValue} from TestContent!</div>;
 };
 
 export default TestFooter;
