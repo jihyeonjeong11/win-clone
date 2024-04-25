@@ -10,7 +10,10 @@
     "test": "jest",
     "prepare": "husky",
     "stylelint": "stylelint --formatter=verbose **/*.ts*",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "docker:build": "docker build -t win-clone .",
+    "docker:run": "docker run -dp 3000:3000 --rm --name win-clone win-clone",
+    "serve": "serve out"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
@@ -57,6 +60,7 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "typescript": "^5",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1"
   }
 }

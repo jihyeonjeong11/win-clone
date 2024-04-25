@@ -17,7 +17,7 @@
     "skipLibCheck": true, // Skips type checking of declaration files (.d.ts), which can speed up the compilation process.
     "strict": true, // Enables all strict type-checking options. It's a good practice to have this enabled for better type safety.
     "target": "esnext", // Sets the ECMAScript target version for the compiled output.
-    "types": ["jest", "offscreencanvas", "wicg-file-system-access"] //  Specifies the type declaration files to include. These help in type checking and autocompletion.
+    "types": ["jest"] //  Specifies the type declaration files to include. These help in type checking and autocompletion. "offscreencanvas", "wicg-file-system-access"
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
