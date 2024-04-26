@@ -46,26 +46,29 @@
       { "fixStyle": "inline-type-imports", "prefer": "type-imports" }
     ],
     "@typescript-eslint/explicit-function-return-type": [
+      // Enforce return type.
       "error",
       { "allowExpressions": true }
     ],
-    "@typescript-eslint/explicit-member-accessibility": "error",
-    "@typescript-eslint/explicit-module-boundary-types": "error",
-    "@typescript-eslint/method-signature-style": "error",
-    "@typescript-eslint/no-confusing-void-expression": "off",
-    "@typescript-eslint/no-dynamic-delete": "off",
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-invalid-void-type": "off",
-    "@typescript-eslint/no-misused-promises": "off",
-    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/explicit-member-accessibility": "error", // Enforce accessibility modifier on class member eg: public, private, protected
+    "@typescript-eslint/explicit-module-boundary-types": "error", // Enforce all functions input and output typing.
+    "@typescript-eslint/method-signature-style": "error", // Enforce arrow function typing with type and interface
+    "@typescript-eslint/no-confusing-void-expression": "off", // Enforce void type with clarity.
+    "@typescript-eslint/no-dynamic-delete": "off", // Disallow using delete on computed key
+    "@typescript-eslint/no-floating-promises": "off", // Require Promise-like statements to be handled appropriately.
+    "@typescript-eslint/no-invalid-void-type": "off", // Disallow void type outside of generic or return types.
+    "@typescript-eslint/no-misused-promises": "off", // Disallow Promises in places not designed to handle them.
+    "@typescript-eslint/no-redeclare": "error", // Disallow variable redeclaration.
     "@typescript-eslint/no-shadow": [
+      // Disallow variable declarations from shadowing variables declared in the outer scope.
+
       "error",
       {
         "ignoreFunctionTypeParameterNameValueShadow": false,
         "ignoreTypeValueShadow": false
       }
     ],
-    "@typescript-eslint/no-unnecessary-condition": "off",
+    "@typescript-eslint/no-unnecessary-condition": "off", // Disallow conditionals where the type is always truthy or always falsy.
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
