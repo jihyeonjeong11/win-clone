@@ -20,7 +20,7 @@
     "types": ["jest"] //  Specifies the type declaration files to include. These help in type checking and autocompletion. "offscreencanvas", "wicg-file-system-access"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "coverage/**/*"]
 }
 
 // https://www.typescriptlang.org/tsconfig

@@ -1,5 +1,5 @@
 import contextFactory from "contexts/contextFactory";
-import useTestContext from "contexts/test/useTestContext";
+import useTestContext from "contexts/testComp/useTestContext";
 
 const { Provider, useContext } = contextFactory(useTestContext);
 

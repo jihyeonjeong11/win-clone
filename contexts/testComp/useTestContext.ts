@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { type TestCommand, type TestContextState } from "contexts/test/types";
+import {
+  type TestCommand,
+  type TestContextState,
+} from "contexts/testComp/types";
 
 const useTestContexts = (): TestContextState => {
   const [testValue, setTestValue] = useState<number>(0);

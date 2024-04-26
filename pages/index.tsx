@@ -1,5 +1,5 @@
 import Head from "next/head";
-import TestComp from "components/test";
+import TestComp from "components/testComp";
 
 const Home = (): React.ReactElement => (
   <>
