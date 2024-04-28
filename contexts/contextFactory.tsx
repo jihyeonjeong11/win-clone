@@ -1,10 +1,16 @@
-import { createContext, memo, useContext } from "react";
+import {
+  type MemoExoticComponent,
+  createContext,
+  memo,
+  useContext,
+} from "react";
 
 const contextFactory = <T,>(
+  // in tsx file, you need to add comma after generic type syntax.
   useContextState: () => T,
   ContextComponent?: React.JSX.Element
 ): {
-  Provider: React.MemoExoticComponent<FC>;
+  Provider: MemoExoticComponent<FC>;
   useContext: () => T;
 } => {
   const Context = createContext(Object.create(null) as T);

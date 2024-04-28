@@ -1,6 +1,9 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import { type AppProps } from "next/app";
+import { TestProvider } from "contexts/test";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }: AppProps): React.ReactElement => (
+  <TestProvider>
+    <Component {...pageProps} />
+  </TestProvider>
+);
+export default App;
