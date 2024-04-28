@@ -1,3 +1,14 @@
+This is my side project to clone of clone of windows, DaedalOS
+
+Git flow
+
+Chop original to pieces -> To draft giberish goes to commented -> goes to main when I fully understand them -> delete draft/x.
+
+Statistics
+
+draft/contextfactory - for understand basic settings. Started since 4/21 Continuing free of free time.
+draft/useRnd - currently working. from 04/28
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
