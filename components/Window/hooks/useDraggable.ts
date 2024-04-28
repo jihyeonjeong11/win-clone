@@ -6,8 +6,8 @@ export type Position = {
 };
 type Draggable = [Position, React.Dispatch<React.SetStateAction<Position>>];
 
-const useDraggable = (): Draggable => {
-  const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
+const useDraggable = (initialPosition: Position): Draggable => {
+  const [position, setPosition] = useState<Position>(initialPosition);
   return [position, setPosition];
 };
 

@@ -9,6 +9,9 @@ Statistics
 draft/contextfactory - for understand basic settings. Started since 4/21 Continuing free of free time.
 draft/useRnd - currently working. from 04/28
 
+Remember kill all data-testid when go Prod!
+For now skip drag event test. Wait for PlayWright adoption later. Which will be written in different branch.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

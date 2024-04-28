@@ -19,7 +19,7 @@ const Home = (): React.ReactElement => {
       </Head>
       <main>
         <TestComp />
-        <Window showWindow={showWindow} setShowWindow={setShowWindow} />
+        {showWindow && <Window setShowWindow={setShowWindow} />}
       </main>
     </>
   );

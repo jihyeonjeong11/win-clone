@@ -3,7 +3,7 @@
 
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import TestComp from "components/testComp/";
+import TestComp from "components/TestComp";
 
 describe("TestComp", () => {
   it("renders properly", () => {
