@@ -12,6 +12,11 @@ draft/useRnd - currently working. from 04/28
 Remember kill all data-testid when go Prod!
 2024/04/28 For now skip drag event test. Wait for PlayWright adoption later. Which will be written in different branch and comapre which one is better.
 
+2024/04/30
+resizing-
+example from https://codesandbox.io/p/sandbox/react-rnd-hooks-example-wor75?file=%2Fsrc%2Findex.js%3A29%2C1-35%2C12
+works but not so good. Also, it not applied to custom components I've build Window. that we need custom resize handle for custom component like daedalOs!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
